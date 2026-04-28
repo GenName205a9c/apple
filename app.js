@@ -60,7 +60,7 @@ async function startGame({ word, kb, board, words }) {
   let todayShort = formatDate(today);
   //meake header for share data
   sharecopy = 
-      '🐴 Horsle 🐴\n' + 
+      '🍎 Apple 🍎\n' + 
       todayShort + '\n';
   //start of game
   let round = 0;
@@ -79,7 +79,7 @@ async function startGame({ word, kb, board, words }) {
     board.revealHint(round, hints);
     kb.revealHint(guess, hints);
     if (guess.join("") === word) {
-      sharecopy = sharecopy + "https://cabletwo.net/horsle"
+      sharecopy = sharecopy + "https://genname205a9c.github.io/apple/"
       $(".feedback").innerHTML = `
         <div id="response">Nice Work!</div>
         <div><button type="button" class="button--share" id="copybutton">Copy results</button></div>
@@ -90,7 +90,7 @@ async function startGame({ word, kb, board, words }) {
       return;
     }
   }
-  sharecopy = sharecopy + "https://cabletwo.net/horsle"
+  sharecopy = sharecopy + "https://genname205a9c.github.io/apple/"
   $(".feedback").innerHTML = `
   <div>GAME OVER<br>Correct Answer was: ${word}</div>
   <div><button type="button" class="button--share" id="copybutton">Copy results</button></div>
