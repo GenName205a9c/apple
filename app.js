@@ -29,7 +29,7 @@ const ROUNDS = 6;
 const LENGTH = 5;
 
 const dictionaryRequest = fetch(
-  "/horsle/dictionary.txt"
+  "/apple/dictionary.txt"
 ).then((r) => r.text());
 const board = $(".board");
 const keyboard = $(".keyboard");
